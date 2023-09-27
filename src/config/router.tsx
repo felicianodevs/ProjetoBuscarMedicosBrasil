@@ -3,8 +3,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 // PAGES
 import Home from '@/pages/home'
-import Contact from '@/pages/contact'
+// import Contact from '@/pages/dashbord'
 import { Spinner } from '@/components/ui'
+import Dashbord from '@/pages/dashbord'
 
 const router = createBrowserRouter([
   {
@@ -12,8 +13,8 @@ const router = createBrowserRouter([
     element: <Home />
   },
   {
-    path: '/contact',
-    element: <Contact />
+    path: '/dashbord',
+    element: <Dashbord />
   }
 ])
 

@@ -9,5 +9,5 @@ type Props = React.DetailedHTMLProps<
 }
 
 export default function Button({ children }: Props) {
-  return <ButtonStyled> {children} </ButtonStyled>
+  return <ButtonStyled>{children}</ButtonStyled>
 }

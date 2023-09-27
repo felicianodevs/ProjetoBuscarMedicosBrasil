@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components'
 export default createGlobalStyle`
   :root {
     --dark: #313131;
+
   }
 
   * {
@@ -16,12 +17,14 @@ export default createGlobalStyle`
 
   html {
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   body, input, select, textarea {
     font-size: 1rem;
     color: var(--dark);
   }
+
 
 
 `

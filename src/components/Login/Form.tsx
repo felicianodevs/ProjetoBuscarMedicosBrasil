@@ -1,37 +1,38 @@
 import Button from '../ui/button'
 import {
-  BoxForm,
+  StyledBoxForm,
   CheckStyled,
-  Container,
-  ContainerForm,
-  Input,
+  StyledContainer,
+  StyledContainerForm,
+  StyledInput,
   LabelStyled,
   EmailStyled,
-  Title,
+  StyledTitle,
   PasswordStyled
 } from './StyledLogin'
+import { Link } from 'react-router-dom'
 
 export default function Form() {
   return (
-    <Container>
-      <BoxForm>
-        <Title>
+    <StyledContainer>
+      <StyledBoxForm>
+        <StyledTitle>
           <h4>seja bem vindo!</h4>
           <h1>Realize seu Login</h1>
-        </Title>
-        <ContainerForm>
+        </StyledTitle>
+        <StyledContainerForm>
           <form>
             <LabelStyled>
               <EmailStyled>Email</EmailStyled>
 
               <label htmlFor="nome">
-                <Input type="text" placeholder="nome" />
+                <StyledInput type="text" placeholder="nome" />
               </label>
 
               <PasswordStyled>Senha</PasswordStyled>
 
               <label htmlFor="nome">
-                <Input type="password" placeholder="nome" />
+                <StyledInput type="password" placeholder="nome" />
               </label>
 
               <CheckStyled>
@@ -41,11 +42,14 @@ export default function Form() {
                 </label>
                 <p>esqueci minha senha</p>
               </CheckStyled>
-              <Button>Entrar</Button>
+
+              <Link to="/dashbord">
+                <Button>Entrar</Button>
+              </Link>
             </LabelStyled>
           </form>
-        </ContainerForm>
-      </BoxForm>
-    </Container>
+        </StyledContainerForm>
+      </StyledBoxForm>
+    </StyledContainer>
   )
 }

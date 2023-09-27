@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import Img from '../../assets/GreenBack.jpeg'
 
-export const Container = styled.div`
+export const StyledContainer = styled.div`
   /* background-image: url(${Img});
   background-size: cover;
   background-attachment: fixed;*/
@@ -15,19 +15,19 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 `
-export const BoxForm = styled.div`
+export const StyledBoxForm = styled.div`
   width: 32rem;
   height: 38rem;
   background-color: white;
   border-radius: 22px;
   padding: 4rem 4rem;
 `
-export const ContainerForm = styled.div`
+export const StyledContainerForm = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
 `
-export const Input = styled.input`
+export const StyledInput = styled.input`
   width: 400px;
   height: 50px;
   border-radius: 16px;
@@ -50,28 +50,35 @@ export const LabelStyled = styled.div`
 
   /* border: black 4px solid; */
 `
-export const Title = styled.div`
+export const StyledTitle = styled.div`
   margin-bottom: 50px;
 `
 export const CheckStyled = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 19px;
+  margin-inline: 0.3rem;
+
+  input {
+    margin-right: 0.7rem;
+  }
 `
 export const EmailStyled = styled.div`
   position: absolute;
   background-color: #ffffff;
-  width: 50px;
+  width: 45px;
   text-align: center;
   margin-top: 16px;
   margin-left: 15px;
   color: #00c247;
+  font-size: small;
 `
 
 export const PasswordStyled = styled.div`
   position: absolute;
   background-color: #fdfdfd;
   width: 49px;
+  font-size: small;
   text-align: center;
   margin-top: 98px;
   margin-left: 15px;
