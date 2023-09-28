@@ -12,7 +12,7 @@ import {
 } from './StyledLogin'
 import { Link } from 'react-router-dom'
 
-export default function Form() {
+export default function LoginComp() {
   return (
     <StyledContainer>
       <StyledBoxForm>

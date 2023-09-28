@@ -1,11 +1,13 @@
-import Form from '@/components/Login/Form'
-import Img from '../assets/WhatsApp Image 2023-09-23 at 13.52.46 (1).jpeg'
-export default function Contact() {
+// import { redirect, useNavigate } from 'react-router-dom'
+
+export default function Home() {
+  // const red = () => {
+  //   return redirect('/faq')
+  // }
+  // red()
   return (
     <>
-      {/* <h1>Olá, página HOME</h1> */}
-
-      <Form />
+      <h1>Home</h1>
     </>
   )
 }

@@ -1,11 +1,15 @@
-import Router from './config/router'
-import GlobalStyles from '@/assets/styles/global-styles'
+import GlobalStyles, { BodyStyled } from '@/assets/styles/global-styles'
+import { Outlet } from 'react-router-dom'
+import SideBar from './components/SideBar'
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <Router />
+      <BodyStyled>
+        <SideBar />
+        <Outlet />
+      </BodyStyled>
     </>
   )
 }

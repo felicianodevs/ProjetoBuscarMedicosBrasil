@@ -6,15 +6,31 @@ import Home from '@/pages/home'
 // import Contact from '@/pages/dashbord'
 import { Spinner } from '@/components/ui'
 import Dashbord from '@/pages/dashbord'
+import LoginComp from '@/components/Login/LoginComp'
+import Login from '@/pages/Login'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
-  },
-  {
-    path: '/dashbord',
-    element: <Dashbord />
+    element: <Home />,
+    children: [
+      {
+        path: '/',
+        element: <Dashbord />
+      }
+    ]
+    // children: [
+    //   {
+    //     path: '/home',
+    //     element: <Home />,
+    //     children: [
+    //       {
+    //         path: '/dashboard',
+    //         element: <Dashbord />
+    //       }
+    //     ]
+    //   }
+    // ]
   }
 ])
 
