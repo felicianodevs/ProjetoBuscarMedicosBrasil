@@ -1,6 +1,7 @@
 import Img from '../../assets/LogoMed.png'
 import { SideBarContainerStyled } from './SideBarStyled'
 import { BiPieChartAlt } from 'react-icons/bi'
+
 export default function SideBar() {
   return (
     <SideBarContainerStyled>

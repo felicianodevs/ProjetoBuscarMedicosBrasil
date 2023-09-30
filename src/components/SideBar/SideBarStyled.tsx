@@ -16,44 +16,63 @@ export const ContHeaderStyled = styled.div`
 
 export const StyledMain = styled.div`
   width: 100%;
-  height: 100%;
-  background-color: red;
+  height: 100vh;
+  background-color: #ff0404;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: solid 8px yellow; */
+  display: flex;
+  flex-direction: column;
 
-  img {
-    width: 386px;
-    height: 464px;
-  }
+  /* border-radius: 24px; */
 `
+export const ImageContainer = styled.div`
+  display: flex;
+
+  /* align-items: center; */
+`
+
 export const BoxWhite1 = styled.div`
-  flex: 1;
-  height: 100%;
+  /* flex: 1; */
+  width: 158%;
+  height: 220px;
   background-color: ffffff;
   /* border: solid 8px yellow; */
   background-color: white;
-  margin: 10px;
+  margin-top: 20px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 24px;
   display: flex;
-  /* padding: 20px; */
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    H3 {
+      margin-bottom: 10px;
+    }
+
+    span {
+      margin-bottom: 35px;
+    }
+  }
 `
-export const BoxWhite2 = styled.div`
-  flex: 1;
-  height: 100%;
-  background-color: ffffff;
-  background-color: white;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  display: flex;
-`
+
 export const BoxContainer = styled.div`
   width: 100%;
-  height: 100%;
+  /* height: 500px; */
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border: solid 3px white;
+
+  img {
+    width: 586px;
+    height: 515px;
+  }
 `
 
 export const SideBarContainerStyled = styled.div`
@@ -67,7 +86,7 @@ export const SideBarContainerStyled = styled.div`
   flex-direction: column;
 
   img {
-    width: 180px;
+    width: 184px;
     height: 80px;
   }
 

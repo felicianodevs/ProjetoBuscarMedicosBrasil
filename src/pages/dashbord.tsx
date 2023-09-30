@@ -6,7 +6,6 @@ import {
   HeaderStyled,
   StyledPersonIcon,
   BoxWhite1,
-  BoxWhite2,
   BoxContainer,
   StyledMain,
   StyledTableUser
@@ -16,6 +15,9 @@ import { GoPerson } from 'react-icons/go'
 import { VscMenu } from 'react-icons/vsc'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import Img from '../assets/Frame 8805.png'
+import BoxTotal from '@/components/BoxTotal/BoxTotal'
+import RegisterUser from '@/assets/register-users.png'
+
 export default function DashBord() {
   return (
     <DashContainerStyled>
@@ -38,23 +40,39 @@ export default function DashBord() {
       </ContHeaderStyled>
 
       <StyledMain>
-        <img src={Img} />
+        {/* <img src={Img} /> */}
 
         <BoxContainer>
-          <div className="BoxWhite">
+          <img src={Img} />
+          <div>
             <BoxWhite1>
-              <p>TEXTO 1</p>
+              <div>
+                <h3>MEDICOS</h3>
+                <span>
+                  <BoxTotal />
+                </span>
+              </div>
+
+              <BoxTotal />
+              <BoxTotal />
             </BoxWhite1>
+
             <BoxWhite1>
-              <p>texto 2</p>
+              <div>
+                <h3>CONTRATANTES</h3>
+                <span>
+                  <BoxTotal />
+                </span>
+              </div>
+              <BoxTotal />
+              <BoxTotal />
             </BoxWhite1>
           </div>
         </BoxContainer>
+        <StyledTableUser>
+          <h1>PARTE DE BAIXO DO CODIGO</h1>
+        </StyledTableUser>
       </StyledMain>
-
-      <StyledTableUser>
-        <h1>PARTE DEBAIRO DO CODIGO</h1>
-      </StyledTableUser>
     </DashContainerStyled>
   )
 }
