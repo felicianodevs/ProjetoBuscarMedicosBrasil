@@ -33,10 +33,9 @@ export const ContainerStyled = styled.div`
     height: 80px;
     border-radius: 50%;
     align-items: center;
-    /* display: flex; */
+
     justify-content: center;
     margin-top: 20px;
-    /* margin-right: 30px; */
 
     img {
       width: 40px;

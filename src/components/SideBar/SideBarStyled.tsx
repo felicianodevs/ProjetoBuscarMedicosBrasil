@@ -6,18 +6,19 @@ export const DashContainerStyled = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  background-color: #f5f5f5;
 `
 export const ContHeaderStyled = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: black;
+  /* background-color: black; */
   width: 100%;
 `
 
 export const StyledMain = styled.div`
   width: 100%;
   height: 100vh;
-  background-color: #ff0404;
+  /* background-color: #ff0404; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,9 +127,9 @@ export const MenuIconStyled = styled.div`
 export const HeaderStyled = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 130px;
+  /* height: 130px; */
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 
   span {
     display: flex;
@@ -153,6 +154,7 @@ export const StyledPersonIcon = styled(GoPerson)`
 export const StyledTableUser = styled.div`
   width: 100%;
   flex: 1;
-  border: solid 8px blue;
-  background-color: #68a0eb;
+  /* border: solid 8px blue; */
+  background-color: #f5f5f5;
+  padding: 54px;
 `
