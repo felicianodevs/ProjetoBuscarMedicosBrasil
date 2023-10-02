@@ -7,12 +7,20 @@ export const DashContainerStyled = styled.div`
   width: 100%;
   height: 100vh;
   background-color: #f5f5f5;
+  margin-left: 17rem;
 `
 export const ContHeaderStyled = styled.div`
   display: flex;
   flex-direction: column;
   /* background-color: black; */
   width: 100%;
+
+  span {
+    border: 1px solid;
+    width: 100%;
+    height: 32px;
+    margin-left: 100px;
+  }
 `
 
 export const StyledMain = styled.div`
@@ -36,7 +44,7 @@ export const ImageContainer = styled.div`
 
 export const BoxWhite1 = styled.div`
   /* flex: 1; */
-  width: 158%;
+  width: 100%;
   height: 220px;
   background-color: ffffff;
   /* border: solid 8px yellow; */
@@ -48,10 +56,13 @@ export const BoxWhite1 = styled.div`
   justify-content: space-between;
   padding: 20px 50px;
   align-items: center;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
 
   div {
     display: flex;
-    flex-direction: column;
+    gap: 18px;
 
     H3 {
       margin-bottom: 10px;
@@ -62,6 +73,14 @@ export const BoxWhite1 = styled.div`
     }
   }
 `
+export const H3 = styled.h3`
+  display: flex;
+  justify-content: start;
+  text-align: start;
+  /* border: solid 5px black; */
+  padding-top: 10px;
+  width: 100%;
+`
 
 export const BoxContainer = styled.div`
   width: 100%;
@@ -71,15 +90,17 @@ export const BoxContainer = styled.div`
   border: solid 3px white;
 
   img {
-    width: 586px;
-    height: 515px;
+    width: 100%x;
+    max-height: 100%;
   }
 `
 
 export const SideBarContainerStyled = styled.div`
   background-color: #046639;
   width: 17rem;
+  height: 100%;
   display: flex;
+  position: fixed;
   padding: 2rem 1rem 0 1rem;
 
   align-items: center;
@@ -126,16 +147,18 @@ export const MenuIconStyled = styled.div`
 
 export const HeaderStyled = styled.div`
   display: flex;
-  justify-content: space-between;
-  /* height: 130px; */
+  width: 100%;
+  height: 130px;
   align-items: center;
   padding: 1rem;
 
   span {
-    display: flex;
-    align-items: end;
+    /* display: flex; */
+    justify-content: start;
+    /* align-items: end; */
+    border: none;
     gap: 1rem;
-    margin-left: 49rem;
+    margin: 0;
   }
 
   ul {
@@ -153,8 +176,8 @@ export const StyledPersonIcon = styled(GoPerson)`
 `
 export const StyledTableUser = styled.div`
   width: 100%;
-  flex: 1;
+  /* flex: 1; */
   /* border: solid 8px blue; */
   background-color: #f5f5f5;
-  padding: 54px;
+  padding: 34px;
 `

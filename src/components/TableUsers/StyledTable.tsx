@@ -21,6 +21,11 @@ export const Table = styled.table`
   th:last-child {
     border-radius: 0px 16px 0px 0px;
   }
+
+  td {
+    padding: 50px;
+    text-align: center;
+  }
 `
 
 export const Header = styled.thead`

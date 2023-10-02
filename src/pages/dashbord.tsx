@@ -7,14 +7,16 @@ import {
   BoxWhite1,
   BoxContainer,
   StyledMain,
-  StyledTableUser
+  StyledTableUser,
+  H3
 } from '@/components/SideBar/SideBarStyled'
-import { BiPieChartAlt } from 'react-icons/bi'
 import { VscMenu } from 'react-icons/vsc'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import Img from '../assets/Frame 8805.png'
 import BoxTotal from '@/components/BoxTotal/BoxTotal'
 import TableUsers from '@/components/TableUsers/TableUsers'
+import RegisterUser from '@/assets/register-users.png'
+import Hirer from '@/assets/hirer.png'
 
 const data = [
   {
@@ -69,18 +71,18 @@ export default function DashBord() {
     <DashContainerStyled>
       <ContHeaderStyled>
         <HeaderStyled>
-          <BiPieChartAlt />
-          <VscMenu />
           <span>
-            <MenuIconStyled>
-              <StyledPersonIcon />
-            </MenuIconStyled>
-
-            <ul>
-              <li>Izabel</li>
-              <li>Izabel@gmail.com</li>
-            </ul>
+            <VscMenu />
           </span>
+          <MenuIconStyled>
+            <StyledPersonIcon />
+          </MenuIconStyled>
+
+          <ul>
+            <li>Izabel</li>
+            <li>Izabel@gmail.com</li>
+          </ul>
+
           <MdKeyboardArrowDown />
         </HeaderStyled>
       </ContHeaderStyled>
@@ -92,34 +94,60 @@ export default function DashBord() {
           <img src={Img} />
           <div>
             <BoxWhite1>
-              <div>
-                <h3>MEDICOS</h3>
-                <span>
-                  <BoxTotal />
-                </span>
-              </div>
+              <H3>MEDICOS</H3>
 
-              <BoxTotal />
-              <BoxTotal />
+              <div>
+                <BoxTotal
+                  icon={RegisterUser}
+                  title={'Total'}
+                  value={'1000'}
+                  color={'#004CE8'}
+                />
+                <BoxTotal
+                  icon={RegisterUser}
+                  title={'Disponiveis'}
+                  value={'900'}
+                  color={'#00C247'}
+                />
+                <BoxTotal
+                  icon={RegisterUser}
+                  title={'Indisponiveis'}
+                  value={'100'}
+                  color={'#FF3333'}
+                />
+              </div>
             </BoxWhite1>
 
             <BoxWhite1>
+              <H3>MEDICOS</H3>
+
               <div>
-                <h3>CONTRATANTES</h3>
-                <span>
-                  <BoxTotal />
-                </span>
+                <BoxTotal
+                  icon={Hirer}
+                  title={'Total'}
+                  value={'1000'}
+                  color={'#FFB801'}
+                />
+                <BoxTotal
+                  icon={Hirer}
+                  title={'Ativos'}
+                  value={'900'}
+                  color={'#00C247'}
+                />
+                <BoxTotal
+                  icon={Hirer}
+                  title={'Inativos'}
+                  value={'100'}
+                  color={'#FF3333'}
+                />
               </div>
-              <BoxTotal />
-              <BoxTotal />
             </BoxWhite1>
           </div>
         </BoxContainer>
-
-        <StyledTableUser>
-          <TableUsers columns={columns} data={data} />
-        </StyledTableUser>
       </StyledMain>
+      <StyledTableUser>
+        <TableUsers columns={columns} data={data} />
+      </StyledTableUser>
     </DashContainerStyled>
   )
 }

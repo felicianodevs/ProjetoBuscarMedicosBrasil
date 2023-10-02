@@ -1,16 +1,28 @@
+import { StringifyOptions } from 'querystring'
 import { ContainerStyled } from './StyledBoxTotal'
 import RegisterUser from '@/assets/register-users.png'
+import { red } from '@mui/material/colors'
 
-export default function BoxTotal() {
+interface TotalProps {
+  icon: string
+  title: string
+  value: string
+  color: string
+}
+
+export default function BoxTotal({ icon, title, value, color }: TotalProps) {
+  const divColor = {
+    backgroundColor: color
+  }
   return (
     <ContainerStyled>
       <span>
-        <div>
-          <img src={RegisterUser} alt="" />
+        <div style={divColor}>
+          <img src={icon} alt="" width={40} height={40} />
         </div>
         <p>
-          <h4>TOTAL</h4>
-          <h1>1000</h1>
+          <h4>{title}</h4>
+          <span>{value} </span>
         </p>
       </span>
     </ContainerStyled>
