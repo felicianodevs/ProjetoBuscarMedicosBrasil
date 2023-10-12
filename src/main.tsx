@@ -3,9 +3,10 @@ import * as ReactDOM from 'react-dom/client'
 import App from './App'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/home.js'
-import Dashbord from './pages/dashbord'
 import Faq from './pages/faq'
 import Login from './pages/Login'
+import RegisterUsers from './pages/RegisterUsers'
+import Dashboard from './pages/dashboard'
 
 const router = createBrowserRouter([
   {
@@ -14,15 +15,22 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Dashboard />
       },
+
       {
-        path: '/dashbord',
-        element: <Dashbord />
+        path: '/dashboard',
+        element: <Dashboard />
       },
+
       {
         path: '/faq',
         element: <Faq />
+      },
+
+      {
+        path: '/registerusers',
+        element: <RegisterUsers />
       }
     ]
   },

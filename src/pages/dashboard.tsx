@@ -17,6 +17,9 @@ import BoxTotal from '@/components/BoxTotal/BoxTotal'
 import TableUsers from '@/components/TableUsers/TableUsers'
 import RegisterUser from '@/assets/register-users.png'
 import Hirer from '@/assets/hirer.png'
+import Header from '../components/Header/Header'
+import { Outlet } from 'react-router-dom'
+// import "../index.css"
 
 const data = [
   {
@@ -66,30 +69,10 @@ const columns = [
   'Tipo de usuário'
 ]
 
-export default function DashBord() {
+export default function DashBoard() {
   return (
     <DashContainerStyled>
-      <ContHeaderStyled>
-        <HeaderStyled>
-          <span>
-            <VscMenu />
-          </span>
-          <MenuIconStyled>
-            <StyledPersonIcon />
-          </MenuIconStyled>
-
-          <ul>
-            <li>Izabel</li>
-            <li>Izabel@gmail.com</li>
-          </ul>
-
-          <MdKeyboardArrowDown />
-        </HeaderStyled>
-      </ContHeaderStyled>
-
       <StyledMain>
-        {/* <img src={Img} /> */}
-
         <BoxContainer>
           <img src={Img} />
           <div>

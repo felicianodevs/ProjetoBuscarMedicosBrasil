@@ -7,7 +7,7 @@ export default function SideBar() {
     <SideBarContainerStyled>
       <img src={Img} width={100} height={70} />
 
-      <nav>
+      <nav className="h-full">
         <ul>
           <div>
             <BiPieChartAlt />

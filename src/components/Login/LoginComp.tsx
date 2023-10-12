@@ -11,8 +11,14 @@ import {
   PasswordStyled
 } from './StyledLogin'
 import { Link } from 'react-router-dom'
+import { LoginService } from '@/Services/login'
 
 export default function LoginComp() {
+  const GetToken = async () => {
+    const userToken = await LoginService('admin@email.com', 'Teste@123')
+  }
+  GetToken()
+
   return (
     <StyledContainer>
       <StyledBoxForm>
@@ -26,18 +32,31 @@ export default function LoginComp() {
               <EmailStyled>Email</EmailStyled>
 
               <label htmlFor="nome">
-                <StyledInput type="text" placeholder="nome" />
+                <StyledInput
+                  type="text"
+                  placeholder="nome"
+                  autoComplete="current-password"
+                />
               </label>
 
               <PasswordStyled>Senha</PasswordStyled>
 
               <label htmlFor="nome">
-                <StyledInput type="password" placeholder="nome" />
+                <StyledInput
+                  type="password"
+                  placeholder="nome"
+                  autoComplete="current-password"
+                />
               </label>
 
               <CheckStyled>
                 <label htmlFor="nome">
-                  <input type="checkbox" name="" id="" />
+                  <input
+                    type="checkbox"
+                    name=""
+                    id=""
+                    autoComplete="current-password"
+                  />
                   Lembrar-me
                 </label>
                 <p>esqueci minha senha</p>

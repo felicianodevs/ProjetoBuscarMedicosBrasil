@@ -23,7 +23,7 @@ export default createGlobalStyle`
   body, input, select, textarea {
     font-size: 1rem;
     color: var(--dark);
-  }`
+  } `
 
 export const BodyStyled = styled.div`
   display: flex;
